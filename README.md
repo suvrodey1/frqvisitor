@@ -43,7 +43,7 @@ The first row of the report is showing the host ""edams.ksc.nasa.gov" accessed u
  
   
 ## Steps to Build Jar File
--  Download pom and Src file
+-  Download pom and src folder
 -  mvn package  
 The out put jar file should be created in target folder.
 
@@ -54,7 +54,7 @@ The unit test cases will be executed while building the pacakage using command -
 ## Steps to Execute Docker
 - Download the docker image (Not attached here in Github)
 - Load docker from gzip file.
-    docker load --input frqvisitor.gzip
+    - docker load --input frqvisitor.gzip
 - Start the container -
   - docker container run -d --name frqvisitorimg frqvisitor:1.0
 - Start docker in interactive mode
