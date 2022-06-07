@@ -65,7 +65,15 @@ The unit test cases will be executed while building the pacakage using command -
 spark-submit --driver-memory 6G --master local[4] --class com.challenge.frqvisit.FrqVisitor
 /home/sparkjob/frqvisit-1.0.0-jar-with-dependencies.jar local 5
   
-**Parameter Detail** 
-  First parameter - Types of environment, possible values local and any values. This is required parameter.
-  Second Parameter - Value of N. Top_N count will be displayed. This is required.
+**Parameter Detail**  
+First parameter - Types of environment, possible values local and any values. This is required parameter.  
+Second Parameter - Value of N. Top_N count will be displayed. This is required parameter.
 
+### Job output in Docker
+![Dockerfile.PNG](images/DockerScreenShot.PNG)   
+ 
+## Docker File
+### Content of Docker File 
+![Dockerfile.PNG](images/Dockerfile.PNG)  
+
+_We didn't use CMD and enforce to use the docker in interactive mode becuase we would like to submit the spark object with different attributes._
