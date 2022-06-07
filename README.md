@@ -57,7 +57,7 @@ The unit test cases will be executed while building the pacakage using command -
     - docker load --input frqvisitor.gzip
 - Start the container -
   - docker container run -d --name frqvisitorimg frqvisitor:1.0
-- Start docker in interactive mode
+- Start docker in interactive mode (interactive mode becuase we would like to submit the spark job with different parameters)
   - docker exec -it <ps id> bash
   
 - Execute the job as below :
@@ -75,10 +75,10 @@ Second Parameter - Value of N. Top_N count will be displayed. This is required p
 ### Content of Docker File 
 ![Dockerfile.PNG](images/Dockerfile.PNG)  
 
-_We didn't use CMD and enforce to use the docker in interactive mode becuase we would like to submit the spark object with different attributes._
+_We didn't use CMD and enforce to use the docker in interactive mode becuase we would like to submit the spark job with different attributes._
 
  ## Notes
  - The data file format is mentioned in Source (FrqVisitor.scala) file
- - All the purpose of each scala files and its method are documented inside the source code.
- - We only parsed necessary columns from the data file i.e hostname, url and access date
+ - The purpose of each scala files and its method are documented inside the source code.
+ - We only parsed necessary columns from the data file to improve the performance i.e hostname, url and access date
  
