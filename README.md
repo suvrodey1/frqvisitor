@@ -6,7 +6,7 @@ Suvro Dey
 ## Project Requirement
 - Develop code in Scala
 - Read the file from FTP Data file location - ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
-- Download data file from Ftp location and upload in GitHub data file location -https://github.com/suvrodey1/frqvisitor/blob/main/NASA_access_log_Jul95
+- Manually download data file from Ftp location and upload in GitHub data file location -https://github.com/suvrodey1/frqvisitor/blob/main/NASA_access_log_Jul95
 - Pull data from the given FTP location first. Otherwise, from Github.
 - Use Apache Spark to find the top-n most frequest visitors and visited urls for each day of the trace.
 
