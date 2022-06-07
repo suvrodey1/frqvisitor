@@ -77,3 +77,9 @@ Second Parameter - Value of N. Top_N count will be displayed. This is required p
 ![Dockerfile.PNG](images/Dockerfile.PNG)  
 
 _We didn't use CMD and enforce to use the docker in interactive mode becuase we would like to submit the spark object with different attributes._
+
+ ## Notes
+ - The data file format is mentioned in Source (FrqVisitor.scala) file
+ - All the purpose of each scala files and its method are documented inside the source code.
+ - We only parsed necessary columns from the data file i.e hostname, url and access date
+ 
