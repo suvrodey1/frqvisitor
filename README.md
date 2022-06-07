@@ -1,4 +1,4 @@
-# Find top-n most frequent visitors and urls for each day of the trace from Nasa access file.
+# Find top-n most frequent visitors and visited urls for each day of the trace from Nasa access file.
 
 ## Contributors
 Suvro Dey
@@ -31,7 +31,7 @@ target/frqvisit-1.0.0-jar-with-dependencies.jar
 **dateAccess** - Date when url accessed.  
 **Count** - Number of times the data accessec.  
 Below table is showing top 5 records per day i.e. n is 5  
-![Output Image](https://github.com/suvrodey1/frqvisitor/tree/main/images))  
+![Output Image](https://github.com/suvrodey1/frqvisitor/tree/main/images/Output.PNG)  
 
 ## How to Compile and Build Jar file
 
